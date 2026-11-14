@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Aviso de ausência de rede. liveRegion faz o leitor de tela anunciá-lo.
 class FaixaOffline extends StatelessWidget {
