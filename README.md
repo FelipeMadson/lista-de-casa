@@ -2,6 +2,12 @@
 
 Aplicativo Android de lista de compras desenvolvido para a disciplina Desenvolvimento para Dispositivos Móveis do IFB. O projeto implementa o [tutorial integrador da Aula 15](https://github.com/claulis/Desenvolvimento-para-Dispositivos-Moveis-2026/blob/main/aulas/aula-15-flutter-tutorial-integrador-sqlite.md), adaptado para compras domésticas.
 
+## Demonstração
+
+[Experimente a prévia no navegador](https://felipemadson.github.io/lista-de-casa/). Ela é independente do aplicativo Android.
+
+![Tela inicial do aplicativo Android em execução no emulador](docs/imagens/app-android.png)
+
 ## O que faz
 
 - Cadastra, edita e exclui itens com categoria, quantidade e observação.
@@ -28,6 +34,8 @@ flutter test
 flutter run
 flutter build apk --release
 ```
+
+O APK publicado está disponível na [release v1.0.0](https://github.com/FelipeMadson/lista-de-casa/releases/tag/v1.0.0). Ele usa a chave de depuração gerada pelo ambiente de compilação e destina-se à demonstração acadêmica.
 
 O APK de release é gerado em `build/app/outputs/flutter-apk/app-release.apk`. O serviço remoto é uma simulação e não oferece backup nem sincronização entre dispositivos.
 
