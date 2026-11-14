@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5f3">
+  <title>Lista de casa — compras sem complicação</title>
+  <meta name="description" content="Conheça e experimente a lista de compras para Android.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar wrap">
+    <a class="brand" href="#inicio" aria-label="Lista de casa, início"><span class="brand-mark" aria-hidden="true">✓</span> lista de casa</a>
+    <nav aria-label="Navegação principal"><a href="#como-funciona">Como funciona</a><a href="#demo">Experimentar</a></nav>
+    <a class="top-link" href="https://github.com/FelipeMadson/lista-de-casa">GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="inicio">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <p class="intro">Uma lista. Menos coisas para lembrar.</p>
+        <h1>O essencial<br>para a sua casa.</h1>
+        <p class="lead">Organize as compras, acompanhe o que falta e leve sua lista com você — mesmo sem conexão.</p>
+        <div class="actions"><a class="button primary" href="#demo">Experimentar a lista <span aria-hidden="true">↘</span></a><a class="button secondary" href="#como-funciona">Conhecer o app</a></div>
+        <p class="platform">Aplicativo Android · dados guardados no aparelho</p>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-note"><span>lista de casa</span><strong>O que precisamos<br>hoje?</strong><div class="art-line"><i>✓</i> Café <small>Mercearia</small></div><div class="art-line"><i></i> Leite <small>Geladeira</small></div><div class="art-line"><i></i> Maçãs <small>Hortifrúti</small></div><div class="art-add">＋</div></div><div class="art-caption">Um pouco mais de espaço<br>para o que importa.</div></div>
+    </section>
+    <section class="features wrap" id="como-funciona"><div><p class="section-kicker">Feito para o dia a dia</p><h2>Uma boa lista<br>faz diferença.</h2></div><div class="feature-list"><article><div><h3>Adicione sem esforço</h3><p>Nome, categoria, quantidade e observações ficam no mesmo lugar.</p></div></article><article><div><h3>Continue offline</h3><p>Os itens ficam no aparelho. A sincronização do projeto é simulada, para fins de estudo.</p></div></article><article><div><h3>Acompanhe as compras</h3><p>Marque o que já entrou no carrinho e mantenha o restante à vista.</p></div></article></div></section>
+    <section class="demo-section" id="demo"><div class="wrap demo-layout"><div><p class="section-kicker">Experimente aqui</p><h2>Sua próxima compra<br>começa assim.</h2><p class="lead">Uma prévia interativa para conhecer a ideia. Os itens desta página ficam neste navegador e não são sincronizados com o aplicativo Android.</p></div><div class="demo-card"><div class="demo-head"><div><span class="demo-label">Lista de casa</span><h3>Minhas compras</h3></div><span class="count" id="count" aria-live="polite"></span></div><form id="form"><label class="visually-hidden" for="item">Nome do item</label><input id="item" maxlength="80" placeholder="O que falta em casa?" required><button type="submit" aria-label="Adicionar item">＋</button></form><ul id="items" aria-label="Itens da lista"></ul><p id="empty" class="empty" hidden>Sua lista está vazia. Adicione o primeiro item acima.</p><p class="demo-foot">Prévia no navegador · sem conexão com o app</p></div></div></section>
+  </main>
+  <footer class="wrap footer"><a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">✓</span> lista de casa</a><p>Projeto acadêmico · Desenvolvimento para Dispositivos Móveis</p><a href="https://github.com/FelipeMadson/lista-de-casa">Ver GitHub ↗</a></footer>
+</body></html>
