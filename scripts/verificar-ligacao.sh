@@ -16,7 +16,9 @@ for _ in $(seq 1 10); do
   sleep 3
   adb shell uiautomator dump /sdcard/tela.xml > /dev/null 2>&1
   adb pull /sdcard/tela.xml tela.xml > /dev/null 2>&1
-  if grep -qF "Adicionar à lista" tela.xml; then
+  # O botão "Adicionar à lista" fica abaixo da dobra; o título e o seletor
+  # de quantidade identificam o formulário de novo item.
+  if grep -qF "Novo item" tela.xml && grep -qF "Aumentar quantidade" tela.xml; then
     adb exec-out screencap -p > ligacao-profunda.png
     echo "ok: a ligação profunda abriu o formulário"
     exit 0
