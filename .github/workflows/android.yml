@@ -43,6 +43,11 @@ jobs:
             sleep 15
             adb shell screencap -p /sdcard/lista-de-casa.png
             adb pull /sdcard/lista-de-casa.png lista-de-casa.png
+            adb shell am start -W -a android.intent.action.VIEW -d "compras://app/item/novo" br.com.felipemadison.compras
+            sleep 5
+            adb shell uiautomator dump /sdcard/tela.xml
+            adb pull /sdcard/tela.xml tela.xml
+            grep -qF "Adicionar à lista" tela.xml || { echo "::error::A ligação profunda não abriu o formulário"; exit 1; }
       - uses: actions/upload-artifact@v4
         with:
           name: captura-android

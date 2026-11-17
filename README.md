@@ -35,6 +35,12 @@ flutter run
 flutter build apk --release
 ```
 
+Com o app instalado, a ligação profunda pode ser testada pelo `adb`:
+
+```sh
+adb shell am start -a android.intent.action.VIEW -d "compras://app/item/novo" br.com.felipemadison.compras
+```
+
 O APK publicado está disponível na [release v1.0.0](https://github.com/FelipeMadson/lista-de-casa/releases/tag/v1.0.0). Ele usa a chave de depuração gerada pelo ambiente de compilação e destina-se à demonstração acadêmica.
 
 O APK de release é gerado em `build/app/outputs/flutter-apk/app-release.apk`. O serviço remoto é uma simulação e não oferece backup nem sincronização entre dispositivos.
